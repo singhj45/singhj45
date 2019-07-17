@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -140,6 +141,10 @@
 
     /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+    .whitespace {
+      color:rgb(192, 191, 191);
+    }
+
   </style>
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -243,8 +248,87 @@
         </h2>                                                                                                                                                                                           
         <hr style="width:200px" class="w3-opacity">                                                                                                                                                       
         <p>                                                                                                                                                                                         
-          I am an International Student in Canada, currently enrolled in Third Year Computer Engineering program at University of British Columbia.                                                       
-        </p>                                                                                                                                                                                      
+          I am an International Student in Canada, currently enrolled in Third Year Computer Engineering program at University of British Columbia. <br>
+        </p> 
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-black">
+          <button id="PI" class="w3-button w3-center w3-grey w3-padding-large w3-section">
+            <i class="glyphicon glyphicon-user">
+            </i> 
+            Profile
+          </button>
+        </div>    
+        
+        <div id="myModal_PI" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">
+                  &times;
+                </span>
+                <h2>
+                  Personal Information
+                </h2>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Name: JASKIRAT SINGH <Br>
+                  Date of Birth: 28th JAN 1999 <br>
+                  Place of Birth: PUNJAB, INDIA <br> <br>
+
+                  Academic History: <br>
+                  Nursery - Grade 12 : Sharjah Indian School, Sharjah, United Arab Emirates. (Grade 12 % = 92.4) <br>
+                  University Transfer Program, Applied Science: College of New Caledonia, Prince George, British Columbia, Canada. Sept 2017 - May 2018. (GPA : 4.01) <br>
+                  Bachelor of Computer Engineering: University of British Columbia, Vancouver, British Columbia, Canada. Sept 2018 - current. (Transferred into 2nd year, currently in 3rd year) <br> <br>
+
+                  Work History: <br>
+                  Fulfillment Associate - Walmart Canada - (June 2018 - Sept 2018) - Stocking + Customer Services <Br> <br>
+                  
+                  Contract/Intern: <br>
+                  Red Maple Learning Institute, Surrey, B.C - (June 2019) - 2 days - Using Microsoft Office Applications, set up a Student Record Management System. <br> <br>
+
+                  Volunteering Experience: <br>
+                  Clean Up UAE (Sharjah, United Arab Emirates) - Volunteer	- September 2014<br>
+                  •	Leading a team of students under mentorship from Emirates Environmental Group (EEG) in learning effective waste management techniques and cleaning up areas in Rural Dubai.<br>
+                  
+                  Can Collection Campaign (Sharjah, United Arab Emirates) - Volunteer - October 2015 <br>
+                  •	Competing with other environment protection clubs by collecting undisposed cans/tins.<br> 
+                  •	Lasted for 2 weeks and ended with 5th position with 20+ clubs competing <Br>
+                  
+                  UBC Engineering Volunteers (Vancouver, British Columbia) - Volunteer	<br>
+                  •	Event 1 : UBC Engineering OPEN house: Attending register’s desk, leading lab tours. (November ,2018) <br>
+                  •	Event 2: Help answer prospective UBC engineering students with admission/program related questions <Br> <br>
+
+                  Communication skills: <br>
+                  Read, write and speak fluently in English, Punjabi and Hindi. <br>
+                  **ENGLISH Proficiency test (IELTS) result: 8 points.<Br>
+                  Read and write fluently in Arabic.<br> <br> 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <h3>
+                  011001010110000101110010011101000110100000100000011100000110010101110010
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/      
+            var PI_modal = document.getElementById("myModal_PI");
+            var PI_btn = document.getElementById("PI");
+            var PI_span = document.getElementsByClassName("close")[0];
+      
+            PI_btn.onclick = function() {
+              PI_modal.style.display = "block";
+            }
+            PI_span.onclick = function() {
+              PI_modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == PI_modal) {
+                PI_modal.style.display = "none";
+              }
+            }
+          </script>
                                                                                                                                                                                                                                       
         <h2 class="w3-text-light-grey">
           Experience with Software
@@ -384,7 +468,10 @@
             Electronic Voting Machine
           </button>
           <button id="TWM"class="button button5 w3-border-black w3-hover-border-red" >
-            This website maybe?
+            BACCARAT
+          </button>
+          <button id="IC"class="button button5 w3-border-black w3-hover-border-white" >
+            Image Compression
           </button>
         </div>
 
@@ -403,13 +490,17 @@
             </div>
             <div class="modal-body">
               <p>
-                Description coming soon...
-              </p>
-              
+                Used ModelSim and Quartus to build a simple “Reduced Instruction Set Computer” (RISC) with Verilog, thereby gaining a better understanding of the chip functionality for ARM “instruction set architecture” <br>
+                Integrated a finite state machine controller, instruction decoder and added Memory to RISC, to support memory mapped I/O. <br>
+                Done as a Lab course over a period of 4 months at University of British Columbia, Vancouver. <br>
+                Course Name: CPEN 211 : Introduction to Microcomputers <Br>
+                Date: Sept 2018 - Dec 2018 <Br>
+                Partner Name : Ryan Koyanagi <br>
+              </p>  
             </div>
             <div class="modal-footer">
               <h3>
-                Partner Name : Ryan Koyanagi
+                Language : VERILOG
               </h3>
             </div>
           </div>
@@ -429,12 +520,18 @@
             </div>
             <div class="modal-body">
               <p>
-                  Description coming soon...
+                Used Microsoft’s Azure Cognitive Services and built upon base code provided by instructor to analyze a text doc and find it's overall sentiment. <br>
+                The text file is read and then broken down into clusters each containing 500 words. These clusters are then sent to Microsoft servers to find their sentiment. <br>
+                Overall sentiment is then calculated. <Br>
+                Done as a Lab course over a period of 4 months at University of British Columbia, Vancouver. <br>
+                Course Name: CPEN 221 : Principals of Software Engineering <Br>
+                Date: mid-Sept 2018 to end of Sept 2018 <Br>
+                Partner Names: Sebastian Gonzalez and Kimia Besfat
               </p>
             </div>
             <div class="modal-footer">
               <h3>
-                Partners: Sebastian Gonzalez and Kimia Besfat
+                Language: JAVA
               </h3>
             </div>
           </div>
@@ -454,12 +551,21 @@
             </div>
             <div class="modal-body">
               <p>
-                Description coming soon...
+                Using Infrared Sensors, geared DC motors, raspberry pi, and additional components, created a line following robot. <br>
+                The robot consisted 6 sensors in the front, each having its unique role. <br> <br>
+                Key feature added: The robot analyses the path it's being following for a while, and accordingly manages its speed. If it has been seeing a straight line for a while, it accelerates and upon noticing a 
+                curve slows down again. This is done with the help of the 2 extra sensors (The instructor asked to use only 4 sensors, we took permission to add 2 more, to add this feature.) which monitor anu change in path
+                coming up ahead, and hence are placed a few centimeters ahead of the 4 sensors monitoring the path. It could also be controlled remotely through a mobile app. <br> <br>
+                Done as a Lab course over a period of 1 month at University of British Columbia, Vancouver. <br>
+                Course Name: CPEN 291 : Computer Engineering Design Studio <Br>
+                Date: Feb 2019 - March 2019 <Br>
+                Partners: Soroush Amirizadeh, Yash Dhandhania, Luqman Hakim, John Marquez and Thong Nguyen <br>
+                My role/focus are: Eventhough every one helped out each other when needed, I worked mostly on path following and acceleration/decceleration algorithm. <br>
               </p>
             </div>
             <div class="modal-footer">
-            <h3>
-                Partners: Soroush Amirizadeh, Yash Dhandhania, Luqman Hakim, John Marquez and Thong Nguyen
+              <h3>
+                Language: PYTHON
               </h3>
             </div>
           </div>
@@ -479,12 +585,40 @@
             </div>
             <div class="modal-body">
               <p>
-                Description Coming soon...
+                Using a fingerprint scanner, camera, RFID card reader, Raspberrypi, touchscreen UI and additional components (electronic and 3d printed) created a fully functional portable Electronic Voting Machine. <br> <br>
+                
+                Working: An Admin can register a user through an online interface, create candidates, and start the voting process. Once the process has started, the voters go to the EVM, enter their username and password,
+                scan their fingerprint and then go through a facial recognition test to cast a vote. The votes are then available for the admin to monitor real time. <br> <Br>
+                
+                Tech used: <b>-</b> Node js is the run-time environment for the backend. <br>
+                <b>-</b> Used Express framework to serve backend requests for its simple and flexible structure, appropriate for rapid prototyping. <br>
+                <b>-</b> Used the Flask framework to make the a facial recognition service. We do this since python has more libraries for accurate facial recognition. <br>
+                <b>-</b> We use passport.js as authentication middleware for security purpose (logging in and signing up) <br>
+                <b>-</b> We further take several security precautions such as storing hashed passwords instead of actual passwords as well as using cookies to maintain sessions for the online portal <br>
+                <b>-</b> We used MongoDB as our database for the users’ information and the polling data <br>
+                <b>-</b> Implemented with HTML, Javascript, CSS and handlebars, it also uses some style sheets from an online style sheet provider W3SCHOOLS.com <br>
+                <b>-</b> We also used handlebars for rapid templating for HTML and CSS <br><br>
+
+                Done as a Lab project over a period of 1 month at University of British Columbia, Vancouver. <br>
+                Course Name: CPEN 291 : Computer Engineering Design Studio <Br>
+                Date: March 2019 - April 2019 <Br>
+                Partners: Soroush Amirizadeh, Yash Dhandhania, Luqman Hakim, John Marquez and Thong Nguyen <br>
+                My role/focus area: Developed the front-end website for the UI. Set up all the hardware along with Soroush. <br> <Br>
+
+                Some Images of the front end and fritzing of the overall hardware. <Br>
+                <div class = "whitespace">
+                  ----------<img src="images/fritzing_proj_2.png" style="width:30%"> ____________________  
+                  <img src="images/homepage.png" style="width:50%"> ---- <Br> <br> <br>
+                  -------------_______________________<img src="images/user_reg.png" style="width:70%"> <br> <br> <br>
+                  ----------<img src="images/admin_access.png" style="width:45%"> --------------
+                  <img src="images/poll_stat.png" style="width:39%">  
+                </div>
+
               </p>
             </div>
             <div class="modal-footer">
               <h3>
-                Partners: Soroush Amirizadeh, Yash Dhandhania, Luqman Hakim, John Marquez and Thong Nguyen
+                Language: Python (basic javascript, HTML, CSS and handlebars as well)
               </h3>
             </div>
           </div>
@@ -499,21 +633,53 @@
                 &times;
               </span>
               <h2>
-                This Website maybe?
+                BACCARAT
               </h2>
             </div>
             <div class="modal-body">
               <p>
-                Descirption Coming soon...
+                Developed a Baccarat engine. Baccarat is a card game played in casinos around the world. A simple datapath can be constructed and controlled by a state machine. Game played through DE1-Soc. <br>
+                Done as a Lab project over a period of 1 week at University of British Columbia, Vancouver. <br>
+                Course Name: CPEN 311 : Digital Systems Design <Br>
+                Date: May 2019 <Br>
               </p>
             </div>
             <div class="modal-footer">
               <h3>
-                No partners.
+                Language : System Verilog
               </h3>
             </div>
           </div>
         </div>
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="myModal_IC" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">
+                  &times;
+                </span>
+                <h2>
+                  Image Compression Algorithms
+                </h2>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Using pre written basic code for classes such as HSLApixel , png etc, implemented compression algorithms in C++. <br>
+                  Done as a Lab project over a period of 1 week at University of British Columbia, Vancouver. <br>
+                  Course Name: CS 221 : Basic Algorithms and Data Structures. <Br>
+                  Date: Marcg 2019 <Br>
+                  Partner: Kimia Besfat <br>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <h3>
+                  Language : C++
+                </h3>
+              </div>
+            </div>
+          </div>
         
         <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -522,7 +688,7 @@
           /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/      
           var SRISCM_modal = document.getElementById("myModal_SRISCM");
           var SRISCM_btn = document.getElementById("SRISCM");
-          var SRISCM_span = document.getElementsByClassName("close")[0];
+          var SRISCM_span = document.getElementsByClassName("close")[1];
   
           SRISCM_btn.onclick = function() {
             SRISCM_modal.style.display = "block";
@@ -540,7 +706,7 @@
           
           var SAOAT_modal = document.getElementById("myModal_SAOAT");
           var SAOAT_btn = document.getElementById("SAOAT");
-          var SAOAT_span = document.getElementsByClassName("close")[1];
+          var SAOAT_span = document.getElementsByClassName("close")[2];
   
           SAOAT_btn.onclick = function() {
             SAOAT_modal.style.display = "block";
@@ -558,7 +724,7 @@
 
           var LFR_modal = document.getElementById("myModal_LFR");
           var LFR_btn = document.getElementById("LFR");
-          var LFR_span = document.getElementsByClassName("close")[2];
+          var LFR_span = document.getElementsByClassName("close")[3];
       
           LFR_btn.onclick = function() {
             LFR_modal.style.display = "block";
@@ -576,7 +742,7 @@
 
           var EVM_modal = document.getElementById("myModal_EVM");
           var EVM_btn = document.getElementById("EVM");
-          var EVM_span = document.getElementsByClassName("close")[3];
+          var EVM_span = document.getElementsByClassName("close")[4];
     
           EVM_btn.onclick = function() {
             EVM_modal.style.display = "block";
@@ -594,7 +760,7 @@
 
           var TWM_modal = document.getElementById("myModal_TWM");
           var TWM_btn = document.getElementById("TWM");
-          var TWM_span = document.getElementsByClassName("close")[4];
+          var TWM_span = document.getElementsByClassName("close")[5];
       
           TWM_btn.onclick = function() {
             TWM_modal.style.display = "block";
@@ -605,6 +771,24 @@
           window.onclick = function(event) {
             if (event.target == TWM_modal) {
               TWM_modal.style.display = "none";
+            }
+          }
+
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
+
+          var IC_modal = document.getElementById("myModal_IC");
+          var IC_btn = document.getElementById("IC");
+          var IC_span = document.getElementsByClassName("close")[6];
+      
+          IC_btn.onclick = function() {
+            IC_modal.style.display = "block";
+          }
+          IC_span.onclick = function() {
+            IC_modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == IC_modal) {
+              IC_modal.style.display = "none";
             }
           }
           
