@@ -1,343 +1,728 @@
 <!DOCTYPE html>
+
 <html>
-<title>Jaskirat_Singh</title>
-<link rel="icon" type="/image/png" href = "images/icon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-h7 {
-  font-family: "Montserrat", sans-serif, color: red
-}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(129, 126, 126, 0.4); /* Black w/ opacity */
-}
+  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <title>
+    Jaskirat_Singh
+  </title>
+  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
+  <link rel="icon" type="/image/png" href = "images/icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------START OF STYLE SHEET-------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
+  <style>
 
+    /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    body, h1,h2,h3,h4,h5,h6 {
+      font-family: "Montserrat", sans-serif
+    }
+    h7 {
+      font-family: "Montserrat", sans-serif, color: red
+    }
+    h8 {
+      font-family: 'Gruppo';
+      font-size: 22px;
+    }
+    /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    #main {
+      margin-left: 120px
+    }
+    
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
+    /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------PROJECT DESCRIPTION MODALS---------------------------------------------------------------------------0----*/
+    /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(129, 126, 126, 0.4); /* Black w/ opacity */
+    }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
 
-.modal-header {
-  padding: 2px 8px;
-  background-color:black;
-  color: white;
-}
+    /*-------------------------------------------------------------------------------ANIMATION FOR MODALAS----------------------------------------------------------------------------------*/
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
 
-.modal-body {
-  padding: 2px 8px;
-  background-color: rgb(192, 191, 191);
-  color: black;
-}
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
 
-.modal-footer {
-  padding: 8px 8px;
-  background-color: black;
-  color: white;
-}
-.button {
-  background-color: #4CAF50; /* Green */
-  border: yellow;
-  color: rgb(255, 255, 255);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-.button5 {
-  background-color: #000000;
-  border: 1px solid
-}
-</style>
-<body class="w3-black">
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-<!-- Icon Bar Left-->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-black w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="images/top_left.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-spin w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-user w3-spin w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-eye w3-spin w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-envelope w3-spin w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-  <a href="wordfiles/Resume.docx" class="w3-bar-item w3-button w3-padding-large w3-black" download>
-    <!--<button class="w3-button w3-black w3-padding-large w3-section"-->
-      <i class="fa fa-download w3-spin w3-xxlarge"></i> 
-      <p>DOWNLOAD <br> RESUME</p>
-    <!---</button-->
-  </a>
-</nav>
+    .modal-header {
+      padding: 2px 8px;
+      background-color:black;
+      color: white;
+    }
 
+    .modal-body {
+      padding: 2px 8px;
+      background-color: rgb(192, 191, 191);
+      color: black;
+    }
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32  w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I am</span> Jaskirat Singh</h1>
-    <p>Computer Engineering Student</p>
-    <img src="images/top_left.png" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+    .modal-footer {
+      padding: 8px 8px;
+      background-color: black;
+      color: white;
+    }
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Introduction?</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p> I am an International Student in Canada, currently enrolled in Third Year Computer Engineering program at University of British Columbia.
-    </p>
+    /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .button {
+      background-color: rgb(0, 0, 0); /* Green */
+      border: 1px solid;
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
 
-    <h2 class="w3-text-light-grey">Experience with Software</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-black">
-      <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-brown w3-xlarge w3-serif">
-        Auto CAD
-      </div>
-      <div class="w3-quarter  w3-border w3-border-black w3-hover-border-red w3-xlarge w3-serif">
-        GIT
-      </div>
-      <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-pink w3-xlarge w3-serif">
-        Linux Terminal
-      </div>
-        <div class="w3-quarter  w3-border w3-border-black w3-hover-border-blue w3-xlarge w3-serif">
-        LaTex
-      </div>
-      <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-yellow w3-xlarge w3-serif">
-        Altera Monitor Program
-      </div>
-        <div class="w3-quarter  w3-border w3-border-black w3-hover-border-green w3-xlarge w3-serif">
-        Fritzing
-      </div>
-      <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-white w3-xlarge w3-serif">
-        Exposure with Microsoft Azure services
-      </div>
-      <div class="w3-quarter  w3-border w3-border-black w3-hover-border-purple w3-xlarge w3-serif">
-        Microsoft Office
-      </div>
-    </div>
+    /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-    <h2 class="w3-text-light-grey">Languages</h2>
-    <hr style="width:200px" class="w3-opacity">
+  </style>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF STYLE SHEET---------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Object Oriented</li>
-          <li class="w3-padding-16">JAVA</li>
-          <li class="w3-padding-16">C++</li>
-          <li class="w3-padding-16">C</li>
-          <li class="w3-padding-16">PYTHON</li>
-        </ul>
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Hardware Definition Language</li>
-          <li class="w3-padding-16">VERILOG</li>
-          <li class="w3-padding-16">System Verilog</li>
-        </ul>
-      </div>
+  <body class="w3-black">
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Assembly</li>
-          <li class="w3-padding-16">ARM</li>
-          <li class="w3-padding-16">x86</li>
-          <li class="w3-padding-16">y86</li>
-        </ul>
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Web Development</li>
-          <li class="w3-padding-16">HTML</li>
-          <li class="w3-padding-16">CSS</li>
-        </ul>
-      </div>
-    </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------START OF LEFT ICON BAR------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-black w3-center">
+      <!-- Avatar image in top left corner -->
+      <img src="images/top_left.png" style="width:100%">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-spin w3-xxlarge">
+        </i>
+        <p>
+          HOME
+        </p>
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-user w3-spin w3-xxlarge">
+        </i>
+        <p>
+          ABOUT
+        </p>
+      </a>
+      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-eye w3-spin w3-xxlarge">
+        </i>
+        <p>
+          PROJECTS
+        </p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-envelope w3-spin w3-xxlarge">
+        </i>
+        <p>
+          CONTACT
+        </p>
+      </a>
+      <a href="wordfiles/Resume.docx" class="w3-bar-item w3-button w3-padding-large w3-black" download>
+        <i class="fa fa-download w3-spin w3-xxlarge">
+        </i> 
+        <p>
+          DOWNLOAD <br> 
+          RESUME
+        </p>
+      </a>
+    </nav>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF LEFT ICON BAR-------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <hr style="width:100%" class="w3-opacity">
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-black">
-      <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
-      </button>
-    </div>
-    <hr style="width:100%" class="w3-opacity">
-  <!-- End About Section -->
-  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------START OF PAGE CONTENT------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-  <!-- Project Section -->
-    <div class="w3-padding-64 w3-content" id="projects">
+    <div class="w3-padding-large" id="main">
 
-      <h2 class="w3-text-light-grey">
-        Projects
-      </h2>
-      <hr style="width:200px" class="w3-opacity">
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <header class="w3-container w3-padding-32  w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">
+            I am
+          </span> 
+          Jaskirat Singh
+        </h1>
+        <h8>
+            'The hardest choices require the strongest wills.'  <br> -Thanos, son of Eternals A'lars.<br><br> 
+        </h8>
+        <img src="images/top_left.png" alt="boy" class="w3-image" width="992" height="1108">
+      </header>
 
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-black">
-        <button id="SRISCM" class="button button5 w3-border-black w3-hover-border-yellow">Simple RISC Machine</button>
-        <button id="SAOAT" class="button button5 w3-border-black w3-hover-border-blue">Sentiment Analysis of a Text</button>
-        <button id="LFR"class="button button5 w3-border-black w3-hover-border-pink" >Line Following Robot</button>
-        <button id="EVM"class="button button5 w3-border-black w3-hover-border-green" >Electronic Voting Machine</button>
-        <button id="TWM"class="button button5 w3-border-black w3-hover-border-red" >This website maybe?</button>
-      </div>
-      
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">
-              &times;
-            </span>
-            <h2>
-              Modal Header
-            </h2>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF HEADER--------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------START OF ABOUT SECTION------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">                                                                                                               
+        <h2 class="w3-text-light-grey">                                                                                                                                                         
+          Introduction?                                                                                                                                                                           
+        </h2>                                                                                                                                                                                           
+        <hr style="width:200px" class="w3-opacity">                                                                                                                                                       
+        <p>                                                                                                                                                                                         
+          I am an International Student in Canada, currently enrolled in Third Year Computer Engineering program at University of British Columbia.                                                       
+        </p>                                                                                                                                                                                      
+                                                                                                                                                                                                                                      
+        <h2 class="w3-text-light-grey">
+          Experience with Software
+        </h2>
+
+        <hr style="width:200px" class="w3-opacity">
+        
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-black">
+          <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-brown w3-xlarge w3-serif">
+            Auto CAD
           </div>
-          <div class="modal-body">
-            <p>
-              Some text in the Modal Body
-            </p>
-            <p>
-              Some other text...
-            </p>
+          <div class="w3-quarter  w3-border w3-border-black w3-hover-border-red w3-xlarge w3-serif">
+            GIT
           </div>
-          <div class="modal-footer">
-            <h3>
-              Modal Footer
-            </h3>
+          <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-pink w3-xlarge w3-serif">
+            Linux Terminal
+          </div>
+            <div class="w3-quarter  w3-border w3-border-black w3-hover-border-blue w3-xlarge w3-serif">
+            LaTex
+          </div>
+          <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-yellow w3-xlarge w3-serif">
+            Altera Monitor Program
+          </div>
+            <div class="w3-quarter  w3-border w3-border-black w3-hover-border-green w3-xlarge w3-serif">
+            Fritzing
+          </div>
+          <div class="w3-threequarter  w3-border w3-border-black w3-hover-border-white w3-xlarge w3-serif">
+            Exposure with Microsoft Azure services
+          </div>
+          <div class="w3-quarter  w3-border w3-border-black w3-hover-border-purple w3-xlarge w3-serif">
+            Microsoft Office
           </div>
         </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <h2 class="w3-text-light-grey">Languages</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                Object Oriented
+              </li>
+              <li class="w3-padding-16">
+                JAVA
+              </li>
+              <li class="w3-padding-16">
+                C++
+              </li>
+              <li class="w3-padding-16">
+                C
+              </li>
+              <li class="w3-padding-16">
+                PYTHON
+              </li>
+            </ul>
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                Hardware Definition Language
+              </li>
+              <li class="w3-padding-16">
+                VERILOG
+              </li>
+              <li class="w3-padding-16">
+                System Verilog
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                Assembly
+              </li>
+              <li class="w3-padding-16">
+                ARM
+              </li>
+              <li class="w3-padding-16">
+                x86
+              </li>
+              <li class="w3-padding-16">
+                y86
+              </li>
+            </ul>
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Web Development</li>
+              <li class="w3-padding-16">HTML</li>
+              <li class="w3-padding-16">CSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <hr style="width:100%" class="w3-opacity">
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-black">
+          <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
+            <i class="fa fa-download">
+            </i> 
+            Download Resume
+          </button>
+        </div>
+        <hr style="width:100%" class="w3-opacity">
       </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF ABOUT SECTION-------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------START OF PROJECTS SECTION--------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="w3-padding-64 w3-content" id="projects">
+
+        <h2 class="w3-text-light-grey">
+          Projects
+        </h2>
+        <hr style="width:200px" class="w3-opacity">
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-black">
+          <button id="SRISCM" class="button button5 w3-border-black w3-hover-border-yellow">
+            Simple RISC Machine
+          </button>
+          <button id="SAOAT" class="button button5 w3-border-black w3-hover-border-blue">
+            Sentiment Analysis of a Text
+          </button>
+          <button id="LFR"class="button button5 w3-border-black w3-hover-border-pink" >
+            Line Following Robot
+          </button>
+          <button id="EVM"class="button button5 w3-border-black w3-hover-border-green" >
+            Electronic Voting Machine
+          </button>
+          <button id="TWM"class="button button5 w3-border-black w3-hover-border-red" >
+            This website maybe?
+          </button>
+        </div>
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="myModal_SRISCM" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">
+                &times;
+              </span>
+              <h2>
+                Simple Reduced Set Instruction Computer Machine
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                Description coming soon...
+              </p>
+              
+            </div>
+            <div class="modal-footer">
+              <h3>
+                Partner Name : Ryan Koyanagi
+              </h3>
+            </div>
+          </div>
+        </div>
         
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <script>
+        <div id="myModal_SAOAT" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">
+                &times;
+              </span>
+              <h2>
+                Sentiment Analysis Of A Text
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                  Description coming soon...
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h3>
+                Partners: Sebastian Gonzalez and Kimia Besfat
+              </h3>
+            </div>
+          </div>
+        </div>      
+        
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="myModal_LFR" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">
+                &times;
+                </span>
+              <h2>
+                Line Following Robot
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                Description coming soon...
+              </p>
+            </div>
+            <div class="modal-footer">
+            <h3>
+                Partners: Soroush Amirizadeh, Yash Dhandhania, Luqman Hakim, John Marquez and Thong Nguyen
+              </h3>
+            </div>
+          </div>
+        </div>
+        
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="myModal_EVM" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">
+                &times;
+              </span>
+              <h2>
+                Electronic Voting Machine
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                Description Coming soon...
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h3>
+                Partners: Soroush Amirizadeh, Yash Dhandhania, Luqman Hakim, John Marquez and Thong Nguyen
+              </h3>
+            </div>
+          </div>
+        </div>
+        
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="myModal_TWM" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">
+                &times;
+              </span>
+              <h2>
+                This Website maybe?
+              </h2>
+            </div>
+            <div class="modal-body">
+              <p>
+                Descirption Coming soon...
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h3>
+                No partners.
+              </h3>
+            </div>
+          </div>
+        </div>
+        
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <script>
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/      
+          var SRISCM_modal = document.getElementById("myModal_SRISCM");
+          var SRISCM_btn = document.getElementById("SRISCM");
+          var SRISCM_span = document.getElementsByClassName("close")[0];
+  
+          SRISCM_btn.onclick = function() {
+            SRISCM_modal.style.display = "block";
+          }
+          SRISCM_span.onclick = function() {
+            SRISCM_modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == SRISCM_modal) {
+              SRISCM_modal.style.display = "none";
+            }
+          }
+          
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/     
+          
+          var SAOAT_modal = document.getElementById("myModal_SAOAT");
+          var SAOAT_btn = document.getElementById("SAOAT");
+          var SAOAT_span = document.getElementsByClassName("close")[1];
+  
+          SAOAT_btn.onclick = function() {
+            SAOAT_modal.style.display = "block";
+          }
+          SAOAT_span.onclick = function() {
+            SAOAT_modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == SAOAT_modal) {
+              SAOAT_modal.style.display = "none";
+            }
+          }
+          
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
+
+          var LFR_modal = document.getElementById("myModal_LFR");
+          var LFR_btn = document.getElementById("LFR");
+          var LFR_span = document.getElementsByClassName("close")[2];
       
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("SRISCM");
-      
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    </script>
+          LFR_btn.onclick = function() {
+            LFR_modal.style.display = "block";
+          }
+          LFR_span.onclick = function() {
+            LFR_modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == LFR_modal) {
+              LFR_modal.style.display = "none";
+            }
+          }
+          
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
+
+          var EVM_modal = document.getElementById("myModal_EVM");
+          var EVM_btn = document.getElementById("EVM");
+          var EVM_span = document.getElementsByClassName("close")[3];
     
-  <!-- End Portfolio Section -->
-  </div>
+          EVM_btn.onclick = function() {
+            EVM_modal.style.display = "block";
+          }
+          EVM_span.onclick = function() {
+            EVM_modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == EVM_modal) {
+              EVM_modal.style.display = "none";
+            }
+          }
+          
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+          var TWM_modal = document.getElementById("myModal_TWM");
+          var TWM_btn = document.getElementById("TWM");
+          var TWM_span = document.getElementsByClassName("close")[4];
+      
+          TWM_btn.onclick = function() {
+            TWM_modal.style.display = "block";
+          }
+          TWM_span.onclick = function() {
+            TWM_modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == TWM_modal) {
+              TWM_modal.style.display = "none";
+            }
+          }
+          
+          /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/  
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 13075, 96 Avenue, Surrey, British Columbia, Canada. V3V 1Y2</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 604-401-5372</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jsinghm99@gmail.com</p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
+        </script>
+      </div>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF PROJECTS SECTION----------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Modified CSS Template from: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------START OF CONTACT SECTION---------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<!-- END PAGE CONTENT -->
-</div>
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">
+          Contact Me
+        </h2>
+        <hr style="width:200px" class="w3-opacity">
 
-</body>
+        <div class="w3-section">
+          <p>
+            <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right">
+            </i> 
+            13075, 96 Avenue, Surrey, British Columbia, Canada. V3V 1Y2
+          </p>
+          <p>
+            <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right">
+            </i> 
+            Phone: +1 604-401-5372
+          </p>
+          <p>
+            <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> 
+            </i> 
+            Email: jsinghm99@gmail.com
+          </p>
+        </div>
+        <br>
+        <p>
+          Lets get in touch. Send me a message:
+        </p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
+          
+          </p>
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+          </p>
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject">
+          </p>
+          <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message">
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane">
+              </i> 
+              SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF CONTACT SECTION------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity">
+
+        </i>
+        <i class="fa fa-instagram w3-hover-opacity">
+
+        </i>
+        <i class="fa fa-snapchat w3-hover-opacity">
+
+        </i>
+        <i class="fa fa-pinterest-p w3-hover-opacity">
+
+        </i>
+        <i class="fa fa-twitter w3-hover-opacity">
+
+        </i>
+        <i class="fa fa-linkedin w3-hover-opacity">
+
+        </i>
+        <p class="w3-medium">
+          Modified CSS Template from: 
+          <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">
+            w3.css
+          </a>
+        </p>
+      </footer>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF FOOTER--------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------END OF PAGE CONTENT--------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  </body>
 </html>
