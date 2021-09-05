@@ -7,90 +7,125 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif
+  }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-td, th {
-  border: 0px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+  td,
+  th {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
 
-tr:nth-child(even) {
-  background-color: #009688;
-}
+  tr:nth-child(even) {
+    background-color: #009688;
+  }
 </style>
+
 <body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+    <!-- The Grid -->
+    <div class="w3-row-padding">
 
-    <!-- Right Column -->
-    <div>
-      
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Activity Locator</h2>
-      </div>
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-rocket fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tech Stack</h2>  
-        <table>
-          <tr>
-            <th>Frameworks and Tech</th>
-            <th>Languages</th>
-            <th>Others</th>
-            <tr> <td>ModelSim</td> <td>C</td> <td>AWS</td>raspberrypi3</tr>
-            <tr> <td>KNN Machine Learning Model</td> <td>Verilog</td> <td>Firebase</td> </tr>
-            <tr> <td>Intel FPGA</td> <td></td> <td>DC Motors</td> </tr>
-            <tr> <td></td> <td></td> <td>Camera</td> </tr>
-          </tr>
-        </table>
-        <br><br>
-      </div>
-      
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Description</h2>
+      <!-- Right Column -->
+      <div>
+
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Activity Locator</h2>
+        </div>
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fa fa-rocket fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tech Stack</h2>
+          <table>
+            <tr>
+              <th>Frameworks and Tech</th>
+              <th>Languages</th>
+              <th>Others</th>
+            <tr>
+              <td>ModelSim</td>
+              <td>C</td>
+              <td>AWS</td>raspberrypi3
+            </tr>
+            <tr>
+              <td>KNN Machine Learning Model</td>
+              <td>Verilog</td>
+              <td>Firebase</td>
+            </tr>
+            <tr>
+              <td>Intel FPGA</td>
+              <td></td>
+              <td>DC Motors</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Camera</td>
+            </tr>
+            </tr>
+          </table>
+          <br><br>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Description</h2>
           <!-- Project Section -->
-        <div class="w3-container" >
-          <div class="w3-col l3 m6 w3-margin-bottom w3-margin-right">
-            <div class="w3-display-container">
-              <!--<video width="200%" height="auto"  controls >
+          <div class="w3-container">
+            <div class="w3-col l3 m6 w3-margin-bottom w3-margin-right">
+              <div class="w3-display-container">
+                <iframe width="840" height="345" src="https://www.youtube.com/embed/VqNGtUGF3xc" allowfullscreen>
+                </iframe>
+                <!--<video width="200%" height="auto"  controls >
                 <source src="BlackJackDealer.MOV" type="video/mp4">
                 Your browser does not support the video tag.
               </video>-->
+              </div>
             </div>
           </div>
+          <p>
+            During my third year at UBC, I was registered in a Design course wherein I decided to design and developed a
+            portable Black Jack Dealer.
+            It consists of a GUI screen for user prompts and display, a raspberrypi3 that controls dc motors(dealing
+            cards), camera (image identification) and firebase notifications.
+            The whole environment is run on an Intel FPGA.
+
+
+            <br><br>My role in this project was primarily focused on the Intel FPGA. This included: <br>
+            - Integrate all the submodules to communicate with each other <br>
+            - Implement the game logic <br>
+            - Use the FPGA's memory modules and Avalon bus to imeplement hardware accelerated graphic modules <br>
+            - Set up DC motors
+
+          </p>
         </div>
-        <p>
-          During my third year at UBC, I was registered in a Design course wherein I decided to design and developed a portable Black Jack Dealer.
-          It consists of a GUI screen for user prompts and display, a raspberrypi3 that controls dc motors(dealing cards), camera (image identification) and firebase notifications.
-          The whole environment is run on an Intel FPGA.
-  
-
-          <br><br>My role in this project was primarily focused on the Intel FPGA. This included: <br>
-          - Integrate all the submodules to communicate with each other <br>
-          - Implement the game logic <br>
-          - Use the FPGA's memory modules and Avalon bus to imeplement hardware accelerated graphic modules <br>
-          - Set up DC motors
-
-        </p>
+        <!-- End Right Column -->
       </div>
-    <!-- End Right Column -->
+      <!-- End Grid -->
     </div>
-  <!-- End Grid -->
+    <!-- End Page Container -->
   </div>
-  <!-- End Page Container -->
-</div>
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>:)</p>
-</footer>
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>:)</p>
+  </footer>
 
 </body>
+
 </html>
