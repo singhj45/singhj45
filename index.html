@@ -1,5 +1,209 @@
-<script>
-  <!--
-  document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Ctitle%3EJaskirat%27s%3C/title%3E%0A%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%22%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//www.w3schools.com/w3css/4/w3.css%22%3E%0A%3Clink%20rel%3D%27stylesheet%27%20href%3D%27https%3A//fonts.googleapis.com/css%3Ffamily%3DRoboto%27%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E%0A%3Cstyle%3E%0Ahtml%2Cbody%2Ch1%2Ch2%2Ch3%2Ch4%2Ch5%2Ch6%20%7Bfont-family%3A%20%22Roboto%22%2C%20sans-serif%7D%0A%0Atable%20%7B%0A%20%20font-family%3A%20arial%2C%20sans-serif%3B%0A%20%20border-collapse%3A%20collapse%3B%0A%20%20width%3A%20100%25%3B%0A%7D%0A%0Atd%2C%20th%20%7B%0A%20%20border%3A%200px%20solid%20%23dddddd%3B%0A%20%20text-align%3A%20left%3B%0A%20%20padding%3A%208px%3B%0A%7D%0A%0Atr%3Anth-child%28even%29%20%7B%0A%20%20background-color%3A%20%23009688%3B%0A%7D%0A%3C/style%3E%0A%3Cbody%20class%3D%22w3-light-grey%22%3E%0A%0A%3C%21--%20Page%20Container%20--%3E%0A%3Cdiv%20class%3D%22w3-content%20w3-margin-top%22%20style%3D%22max-width%3A1400px%3B%22%3E%0A%0A%20%20%3C%21--%20The%20Grid%20--%3E%0A%20%20%3Cdiv%20class%3D%22w3-row-padding%22%3E%0A%20%20%0A%20%20%20%20%3C%21--%20Left%20Column%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22w3-third%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-white%20w3-text-grey%20w3-card-4%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-display-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22images/image.jpg%22%20style%3D%22width%3A100%25%22%20alt%3D%22Avatar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-display-bottomleft%20w3-container%20w3-text-white%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3EJaskirat%20Singh%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Ci%20class%3D%22fa%20fa-briefcase%20fa-fw%20w3-margin-right%20w3-large%20w3-text-teal%22%3E%3C/i%3EComputer%20Engineer%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Ci%20class%3D%22fa%20fa-home%20fa-fw%20w3-margin-right%20w3-large%20w3-text-teal%22%3E%3C/i%3EBritish%20Columbia%2C%20Canada%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Ci%20class%3D%22fa%20fa-envelope%20fa-fw%20w3-margin-right%20w3-large%20w3-text-teal%22%3E%3C/i%3Ejsinghm99@gmail.com%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Ci%20class%3D%22fa%20fa-linkedin%20fa-fw%20w3-margin-right%20w3-large%20w3-text-teal%22%3E%3C/i%3E%3Ca%20href%3D%22https%3A//www.linkedin.com/in/jaskiratsinghmalhi%22%3Ejaskiratsinghmalhi%3C/a%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22w3-large%20w3-text-theme%22%3E%3Cb%3E%3Ci%20class%3D%22fa%20fa-globe%20fa-fw%20w3-margin-right%20w3-text-teal%22%3E%3C/i%3ELanguages%3C/b%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EEnglish%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-light-grey%20w3-round-xlarge%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-round-xlarge%20w3-teal%22%20style%3D%22height%3A24px%3Bwidth%3A100%25%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EHindi%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-light-grey%20w3-round-xlarge%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-round-xlarge%20w3-teal%22%20style%3D%22height%3A24px%3Bwidth%3A100%25%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EPunjabi%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-light-grey%20w3-round-xlarge%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-round-xlarge%20w3-teal%22%20style%3D%22height%3A24px%3Bwidth%3A95%25%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22w3-large%20w3-text-theme%22%3E%3Cb%3E%3Ci%20class%3D%22fa%20fa-graduation-cap%20fa-fw%20w3-margin-right%20w3-text-teal%22%3E%3C/i%3ERelevant%20Course%20Work%3C/b%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EData%20Structures%20and%20Algorothims%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22https%3A//www.students.cs.ubc.ca/%7Ecs-221/current/%22%20target%3D%22_blank%22%3ECPSC%20221%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22https%3A//blogs.ubc.ca/cpsc3202016w2/syllabus/%22%20target%3D%22_blank%22%3ECPSC%20320%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EAI%20/%20ML%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22https%3A//ubc-cs.github.io/cpsc340/%22%20target%3D%22_blank%22%3ECPSC%20340%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22https%3A//www.cs.ubc.ca/%7Epoole/cs322/2020/%22%20target%3D%22_blank%22%3ECPSC%20322%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EProject%20Course%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22Projects/phsyviz.html%22%20target%3D%22_blank%22%3ECPEN%20491%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22Projects/BlackJackDealer.html%22%20target%3D%22_blank%22%3ECPEN%20391%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22Projects/ElectronicVotingMachine.html%22%20target%3D%22_blank%22%3ECPEN%20291%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20321%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20221%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20400A%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EElectronics%20and%20Communication%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3EELEC%20201%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3EELEC%20331%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EOS%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20331%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPSC%20213%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20291%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20221%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EMicroprocessor%20/%20System%20Architecture%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20211%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPSC%20311%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Ca%20href%3D%22%22%20target%3D%22_blank%22%3ECPEN%20411%20%28UBC%29%3C/a%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%3Cbr%3E%0A%0A%20%20%20%20%3C%21--%20End%20Left%20Column%20--%3E%0A%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C%21--%20Right%20Column%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22w3-twothird%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%20w3-card%20w3-white%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22w3-text-grey%20w3-padding-16%22%3E%3Ci%20class%3D%22fa%20fa-certificate%20fa-fw%20w3-margin-right%20w3-xxlarge%20w3-text-teal%22%3E%3C/i%3EFormal%20Education%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3EUniversity%20of%20British%20Columbia%2C%20Vancouver%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3E%3Ci%20class%3D%22fa%20fa-calendar%20fa-fw%20w3-margin-right%22%3E%3C/i%3E2018%20-%202021%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EB.A.S.C%20in%20Computer%20Engineering%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3ECollege%20of%20New%20Caledonia%2C%20Prince%20George%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3E%3Ci%20class%3D%22fa%20fa-calendar%20fa-fw%20w3-margin-right%22%3E%3C/i%3E2017%20-%202018%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3EApplied%20Science%20Certificate%3C/p%3E%0A%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%20w3-card%20w3-white%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22w3-text-grey%20w3-padding-16%22%3E%3Ci%20class%3D%22fa%20fa-rocket%20fa-fw%20w3-margin-right%20w3-xxlarge%20w3-text-teal%22%3E%3C/i%3ESkills%3C/h2%3E%20%20%0A%20%20%20%20%20%20%20%20%3Ctable%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cth%3EFrameworks%20and%20Tech%3C/th%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cth%3ELanguages%3C/th%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cth%3EOthers%3C/th%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3EReact%3C/td%3E%20%3Ctd%3EJava%3C/td%3E%20%3Ctd%3ETri-Lingual%3C/td%3E%20%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3EExpress.js%3C/td%3E%20%3Ctd%3EJavaScript%3C/td%3E%20%3Ctd%3ECustomer%20Service%3C/td%3E%20%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3ENode.js%3C/td%3E%20%3Ctd%3EC++%3C/td%3E%20%3Ctd%3E%20Asana%3C/td%3E%20%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3EGit%20/%20Github%3C/td%3E%20%3Ctd%3EC%3C/td%3E%20%3Ctd%3EAgile%20Process%3C/td%3E%20%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3EAWS%20/%20Azure%3C/td%3E%20%3Ctd%3EVerilog%3C/td%3E%20%3Ctd%3EHuman%20Factor%20Mitigation%3C/td%3E%20%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3EQuartus%20/%20ModelSim%3C/td%3E%20%3Ctd%3ESystem%20Verilog%3C/td%3E%20%3Ctd%3E%20HTML%20%3C/td%3E%3C/tr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctr%3E%20%3Ctd%3EAndroid%20Studio%3C/td%3E%20%3Ctd%3ER%3C/td%3E%20%3Ctd%3ECSS%3C/td%3E%20%3C/tr%3E%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C/table%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%3Cbr%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%20w3-card%20w3-white%20w3-margin-bottom%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22w3-text-grey%20w3-padding-16%22%3E%3Ci%20class%3D%22fa%20fa-folder%20fa-fw%20w3-margin-right%20w3-xxlarge%20w3-text-teal%22%3E%3C/i%3ETechnical%20Projects%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3E%3Ca%20href%3D%22Projects/phsyviz.html%22%3EPhsyviz%3C/a%3E%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3EJavaScript%20%7C%20React%20%7C%20AWS%20%7C%20MongoDB%20%7C%20Netlify%20%7C%20Heroku%20%7C%20BLE%20%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Senior%20year%20Capstone%20Project%20at%20University%20of%20British%20Columbia%2C%20Vancouver%20for%20B.A.S.C%20Computer%20Engineering.%0A%20%20%20%20%20%20%20%20%20%20%20%20A%20tele-rehabilitation%20platform%20%28cross%20platform%20mobile%20app%20and%20website%29%20for%20physiotherapists%20and%20their%20patients.%0A%20%20%20%20%20%20%20%20%20%20%20%20Allows%20remote%20monitoring%20of%20patients%20as%20well%20as%20session%20monitoring%20data%20analyzing%20features%20for%20physiotherapists%20via%20a%20web%20portal.%0A%20%20%20%20%20%20%20%20%20%20%20%20Allows%20patients%20to%20conduct%20various%20sessions%20remotely%20via%20a%20mobile%20app%20and%20a%20load%20monitoring%20sensor.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3E%3Ca%20href%3D%22Projects/ActivityLocator.html%22%3EActivity%20Locator%3C/a%3E%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3EJava%20%7C%20Android%20Studio%20%7C%20AWS%20%7C%20MongoDB%20%7C%20Google%20Maps%20APIs%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20An%20Android%20mobile%20application%20for%20users%20to%20creat%2C%20browse%20and%20join%20activities%20based%20on%20input%20parameters.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20Input%20parameters%20include%20courseload%2C%20university%2C%20location%20etc%2C%20as%20well%20as%20preference%20of%20each%20parameter.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3E%3Ca%20href%3D%22Projects/BlackJackDealer.html%22%3EBlack%20Jack%20Dealer%3C/a%3E%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3EC%20%7C%20Verilog%20%7C%20Intel%20FPGA%20%7C%20raspberrypi3%20%7C%20ModelSim%20%7C%20camera%20%7C%20DC%20Motors%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Portable%20Black%20Jack%20Dealer/Player%20that%20plays%20the%20role%20of%20a%20dealer%20in%20a%20Black%20Jack%20game%20by%20dealing%20cards%20using%20dc%20motors%20and%20identiying%20%0A%20%20%20%20%20%20%20%20%20%20%20%20own%20cards%20using%20cameras%20and%20machine%20learning%20models.%20The%20game%20is%20played%20on%20a%20GUI%20screen%20backed%20by%20hardware%20accelerated%20graphics.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20The%20environment%20is%20run%20on%20an%20Intel%20FPGA%20and%20raspberrypi3.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3E%3Ca%20href%3D%22Projects/ElectronicVotingMachine.html%22%3EElectronic%20Voting%20Machine%3C/a%3E%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3EC%20%7C%20Python%20%7C%20raspberrypi3%20%7C%20RFID%20reader%20%7C%20fingerprint%20sensor%20%7C%20AWS%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20A%20portable%20Electronic%20Voting%20Machine%20incorporating%20multiple%20tiers%20of%20security%20and%20biomedical%20identification%20of%20voters.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3E%3Ca%20href%3D%22Projects/LineFollowingRobot.html%22%3ELine%20Following%20Robot%3C/a%3E%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3Epython%20%7C%20raspberrypi3%20%7C%20DC%20motors%20%7C%20infrared%20sensors%20%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20A%20line%20%28Black%20Tape%29%20following%20robot%20capable%20of%20identifying%20straight%20and%20curved%20paths%20and%20accelerating%20and%20deccelerating%20accordingly.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch5%20class%3D%22w3-opacity%22%3E%3Cb%3E%3Ca%20href%3D%22Projects/SentimentAnalysis.html%22%3ESentiment%20Analysis%3C/a%3E%3C/b%3E%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch6%20class%3D%22w3-text-teal%22%3EJava%20%7C%20Microsoft%20Azure%20%3C/h6%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Built%20upon%20legacy%20code%20to%20parse%20tect%20files%20and%20design%20dynamic%20storages%20to%20analyze%20text%20sentitment%20using%20Azure%20Sentiment%20Analysis%20and%20categorizing%20literary%20books%0A%20%20%20%20%20%20%20%20%20%20%20%20baased%20on%20sentiments.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C%21--%20End%20Right%20Column%20--%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%0A%20%20%3C%21--%20End%20Grid%20--%3E%0A%20%20%3C/div%3E%0A%20%20%0A%20%20%3C%21--%20End%20Page%20Container%20--%3E%0A%3C/div%3E%0A%0A%3Cfooter%20class%3D%22w3-container%20w3-teal%20w3-center%20w3-margin-top%22%3E%0A%20%20%3Cp%3E%3A%29%3C/p%3E%0A%3C/footer%3E%0A%0A%3C/body%3E%0A%3C/html%3E"));
-  //-->
-  </script>
+<!DOCTYPE html>
+<html>
+<title>Jaskirat's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #009688;
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/image.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Jaskirat Singh</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Engineer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>British Columbia, Canada</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jsinghm99@gmail.com</p>
+          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/jaskiratsinghmalhi">jaskiratsinghmalhi</a></p>
+          <hr>
+        
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Hindi</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Punjabi</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
+          </div>
+          <br>
+          <hr>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i>Relevant Course Work</b></p>
+          <p>Data Structures and Algorothims</p>
+          <h5 class="w3-opacity"><a href="https://www.students.cs.ubc.ca/~cs-221/current/" target="_blank">CPSC 221 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://blogs.ubc.ca/cpsc3202016w2/syllabus/" target="_blank">CPSC 320 (UBC)</a></h5>
+          <p>Artificial Intelligence and Machine Learning</p>
+          <h5 class="w3-opacity"><a href="https://ubc-cs.github.io/cpsc340/" target="_blank">CPSC 340 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://www.cs.ubc.ca/~poole/cs322/2020/" target="_blank">CPSC 322 (UBC)</a></h5>
+          <p>Project / Design </p>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/undergraduates/capstone/" target="_blank">CPEN 491 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/cpen-391/" target="_blank">CPEN 391 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/cpen-321/" target="_blank">CPEN 321 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://github.com/CPEN-221" target="_blank">CPEN 221 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://github.com/karthikp-ubc/CPEN400A-codesamples" target="_blank">CPEN 400A (UBC)</a></h5>
+          <p>Electronics and Communication</p>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/elec-201/" target="_blank">ELEC 201 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/elec-331/" target="_blank">ELEC 331 (UBC)</a></h5>
+          <p>Computer and Operating Systems</p>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/cpen-331/" target="_blank">CPEN 331 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="" target="_blank">CPSC 213 (UBC)</a></h5>
+          <p>Microprocessor / System Architecture</p>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/cpen-211/" target="_blank">CPEN 211 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/cpen-311/" target="_blank">CPSC 311 (UBC)</a></h5>
+          <h5 class="w3-opacity"><a href="https://ece.ubc.ca/courses/cpen-411/" target="_blank">CPEN 411 (UBC)</a></h5>
+          <br>
+          <hr>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+      
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Formal Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of British Columbia, Vancouver</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021</h6>
+          <p>B.A.S.C in Computer Engineering </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>College of New Caledonia, Prince George</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
+          <p>Applied Science Certificate</p>
+
+        </div>
+      </div>
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-rocket fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills</h2>  
+        <table>
+          <tr>
+            <th>Frameworks and Tech</th>
+            <th>Languages</th>
+            <th>Others</th>
+          </tr>
+          <tr> <td>React</td> <td>Java</td> <td>Tri-Lingual</td> </tr>
+          <tr> <td>Express.js</td> <td>JavaScript</td> <td>Customer Service</td> </tr>
+          <tr> <td>Node.js</td> <td>C++</td> <td> Asana</td> </tr>
+          <tr> <td>Git / Github</td> <td>C</td> <td>Agile Process</td> </tr>
+          <tr> <td>AWS / Azure</td> <td>Verilog</td> <td>Human Factor Mitigation</td> </tr>
+          <tr> <td>Quartus / ModelSim</td> <td>System Verilog</td> <td> HTML </td></tr>
+          <tr> <td>Android Studio</td> <td>R</td> <td>CSS</td> </tr>        
+        </table>
+        <br><br>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Technical Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="Projects/phsyviz.html">Phsyviz</a></b></h5>
+          <h6 class="w3-text-teal">JavaScript | React | AWS | MongoDB | Netlify | Heroku | BLE </h6>
+          <p>
+            Senior year Capstone Project at University of British Columbia, Vancouver for B.A.S.C Computer Engineering.
+            A tele-rehabilitation platform (cross platform mobile app and website) for physiotherapists and their patients.
+            Allows remote monitoring of patients as well as session monitoring data analyzing features for physiotherapists via a web portal.
+            Allows patients to conduct various sessions remotely via a mobile app and a load monitoring sensor.
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="Projects/ActivityLocator.html">Activity Locator</a></b></h5>
+          <h6 class="w3-text-teal">Java | Android Studio | AWS | MongoDB | Google Maps APIs</h6>
+          <p>
+            An Android mobile application for users to creat, browse and join activities based on input parameters. 
+            Input parameters include courseload, university, location etc, as well as preference of each parameter.
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="Projects/BlackJackDealer.html">Black Jack Dealer</a></b></h5>
+          <h6 class="w3-text-teal">C | Verilog | Intel FPGA | raspberrypi3 | ModelSim | camera | DC Motors</h6>
+          <p>
+            Portable Black Jack Dealer/Player that plays the role of a dealer in a Black Jack game by dealing cards using dc motors and identiying 
+            own cards using cameras and machine learning models. The game is played on a GUI screen backed by hardware accelerated graphics. 
+            The environment is run on an Intel FPGA and raspberrypi3.
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="Projects/ElectronicVotingMachine.html">Electronic Voting Machine</a></b></h5>
+          <h6 class="w3-text-teal">C | Python | raspberrypi3 | RFID reader | fingerprint sensor | AWS</h6>
+          <p>
+            A portable Electronic Voting Machine incorporating multiple tiers of security and biomedical identification of voters.
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="Projects/LineFollowingRobot.html">Line Following Robot</a></b></h5>
+          <h6 class="w3-text-teal">python | raspberrypi3 | DC motors | infrared sensors </h6>
+          <p>
+            A line (Black Tape) following robot capable of identifying straight and curved paths and accelerating and deccelerating accordingly.
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><a href="Projects/SentimentAnalysis.html">Sentiment Analysis</a></b></h5>
+          <h6 class="w3-text-teal">Java | Microsoft Azure </h6>
+          <p>
+            Built upon legacy code to parse tect files and design dynamic storages to analyze text sentitment using Azure Sentiment Analysis and categorizing literary books
+            baased on sentiments.
+          </p>
+          <hr>
+        </div>        
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>:)</p>
+</footer>
+
+</body>
+</html>
